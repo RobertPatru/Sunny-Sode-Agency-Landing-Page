@@ -1,0 +1,155 @@
+/* iPhone 5 Portrait */
+#header::before {
+    content: '';
+    background: url('/images/mobile/image-header.jpg') no-repeat center bottom/cover;
+}
+
+.box-2 {
+    background: url('/images/mobile/image-transform.jpg') no-repeat center/cover;
+}
+.box-3 {
+    background: url('/images/mobile/image-stand-out.jpg') no-repeat center/cover;
+}
+.box-5 {
+    background: url('/images/mobile/image-graphic-design.jpg') no-repeat center/cover;
+}
+.box-6 {
+    background: url('/images/mobile/image-photography.jpg') no-repeat center/cover;
+}
+
+.gallery-box-1 {
+    background: url("/images/mobile/image-gallery-milkbottles.jpg") no-repeat center center/cover;
+}
+.gallery-box-2 {
+    background: url("/images/mobile/image-gallery-orange.jpg") no-repeat center center/cover;
+}
+.gallery-box-3 {
+    background: url("/images/mobile/image-gallery-cone.jpg") no-repeat center center/cover;
+}
+.gallery-box-4 {
+    background: url("/images/mobile/image-gallery-sugar-cubes.jpg") no-repeat center center/cover;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+}
+.navbar-container ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ############### Main */
+#main {
+    top: 160px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.text-container {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 8px;
+}
+
+.text {
+    padding: 0%;
+}
+
+.learn-more-btn {
+    margin: 50px 0;
+    margin-left: 10px;
+}
+
+.img {
+    max-width: none;
+    min-width: 0;
+    min-height: 0;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6 {
+    height: 500px;
+    overflow:hidden;
+}
+
+.box-5,
+.box-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.photography-text,
+.graphic-text,
+.graphic,
+.photography {
+    width: 300px;
+}
+
+.photography-text,
+.graphic-text {
+    margin-bottom: -70px;
+}
+
+/* ################## Terstimonials */
+#testimonials {
+    top: 190px; 
+    height: 100%;
+    overflow-y: hidden;
+}
+
+#testimonials h1 {
+    font-size: 18px;
+    padding: 0%;
+    margin: 30px 0%;
+    text-align: center;
+}
+
+.wrap-testimonial-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.testimonial-box-style {
+    margin-top: 50px;
+    border-bottom: 2px black solid;
+}
+
+.testimonial-box-style:nth-child(3) {
+    border-bottom: none;
+}
+
+.role {
+    margin-bottom: 20px;
+}
+
+.testimonial-paragraph {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ################### Image Gallery */
+
+#img-gallery {
+    top: 250px;
+    grid-template-columns: 1fr;
+}
+
+/* #################### Footer */
+#footer {
+    top: 250px;
+}

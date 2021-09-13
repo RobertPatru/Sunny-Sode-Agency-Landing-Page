@@ -1,0 +1,67 @@
+/* iPad Pro Landscape*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+    .img {
+        min-width: 0%;
+        min-height: 0%;
+    }
+    .testimonial-box-style {
+        width: 32%;
+    }
+    .testimonial-box-style:nth-child(2) {
+        width: 35%;
+    }
+    .testimonial-paragraph:nth-child(2) {
+        padding: 0 10px;
+    }
+    .graphic{
+        margin-left: -100px;
+    }
+    .graphic-text {
+        width: 300px;
+    }
+    .photography-text {
+        width: 320px;
+        margin-bottom: 40px;
+    }
+    .paragraph {
+        margin: 10px 0;
+    }
+    .testimonial-tile {
+        margin-bottom: 100px;
+    }
+    .text:nth-child(5) {
+        padding-bottom: 70px;
+    }
+    
+}
+/* iPad Pro Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    .graphic,
+    .photography  {
+        margin-left: -90px;
+        width: 370px;
+    }
+   
+    .graphic-text {
+        margin-left: -50px;
+        width: 270px;
+    }
+    .photography-text {
+        margin-left: -20px;
+    }
+    .testimonial-box-style {
+        width: 30%;
+    } 
+    .testimonial-box-style:nth-child(1) {
+        width: 28%;
+    }
+    .testimonial-box-style:nth-child(2) {
+        width: 35%;
+    }
+    
+    .img {
+        max-width: none;
+        min-width: 0;
+        min-height: 0;
+    }
+}

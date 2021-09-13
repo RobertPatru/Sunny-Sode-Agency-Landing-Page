@@ -1,0 +1,115 @@
+/* iPad Landscape */
+@media (min-width: 1023px) and (max-width: 1025px)
+and (min-height:767px) and (max-height: 769px) {
+    .text {
+        padding: 0 100px;
+    }
+    .title {
+        text-align: center;
+    }
+    .graphic {
+        margin-left: -60px;
+        width: 350px;
+    }
+    .graphic-text {
+        margin-bottom: -25px;
+    }
+    .photography {
+        margin-left: -45px;
+    }
+    .photography-text {
+        margin-bottom: -55px;
+        margin-left: -50px;
+    }
+    .graphic-text {
+        width: 400px;
+        margin-left: -100px;
+    }
+}
+/* iPad Portrait */
+@media (min-width: 767px) and (max-width: 769px)
+and (min-height: 1023px) and (max-height: 1025px) {
+    .img {
+        max-width: none;
+        min-width: 0;
+        min-height: 0;
+    }
+    .navbar-container img {
+        margin-top: 28px;
+    }
+    .text {
+        width: 100%;
+        padding: 0;
+        padding-left: 20px;
+    }
+    .title {
+        text-align: center;
+        margin-bottom: -50px;
+    }
+    
+    .graphic,
+    .photography {
+        margin-bottom: 15px;
+        margin-left: -130px;
+        width: 350px;
+    }
+    
+    .graphic-text{
+        width: 300px;
+        margin-bottom: -20px;
+    }
+    .graphic-text,
+    .photography-text {
+        margin-left: -115px;
+    }
+
+    .photography-text {
+        width: 320px;
+    }
+
+    #header::before {
+        content: '';
+        background: url('/images/mobile/image-header.jpg') no-repeat center bottom/cover;
+    }
+    .box-2 {
+        background: url('/images/mobile/image-transform.jpg') no-repeat center/cover;
+    }
+    .box-3 {
+        background: url('/images/mobile/image-stand-out.jpg') no-repeat center/cover;
+    }
+    .box-5 {
+        background: url('/images/mobile/image-graphic-design.jpg') no-repeat center/cover;
+    }
+    .box-6 {
+        background: url('/images/mobile/image-photography.jpg') no-repeat center/cover;
+    }
+
+    .testimonial-tile {
+        margin-bottom: 80px;
+    }
+    .testimonial-box-style {
+        margin: 0 10px;
+    }
+    .testimonial-box-style:nth-child(1) {
+        width: 33%;
+    }
+    .testimonial-box-style:nth-child(2) {
+        width: 36%;
+    }
+    .testimonial-box-style:nth-child(3) {
+        width: 30%;
+    }
+
+    .gallery-box-1 {
+        background: url("/images/mobile/image-gallery-milkbottles.jpg") no-repeat center center/cover;
+    }
+    .gallery-box-2 {
+        background: url("/images/mobile/image-gallery-orange.jpg") no-repeat center center/cover;
+    }
+    .gallery-box-3 {
+        background: url("/images/mobile/image-gallery-cone.jpg") no-repeat center center/cover;
+    }
+    .gallery-box-4 {
+        background: url("/images/mobile/image-gallery-sugar-cubes.jpg") no-repeat center center/cover;
+    }
+}

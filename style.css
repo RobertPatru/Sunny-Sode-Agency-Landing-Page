@@ -1,0 +1,372 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ################################## Header */
+#header {
+    background-color: transparent;
+    height: 100%;
+    z-index: 1;
+}
+#header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 832px;
+    background: url('/images/desktop/image-header.jpg') center bottom/cover;
+    z-index: -1;
+}
+
+/* ################################## Navbar */
+.navbar-container {
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.navbar-container img {
+    margin-top: 47px;
+}
+.navbar-container ul {
+    display: flex;
+    margin-top: 27px;
+}
+.navbar-container li {
+    font-weight: 700;
+    padding: 20px 35px;
+    border-radius: 4rem;
+}
+.navbar-container li:hover {
+    background-color: #6FCFFF;
+}
+.navbar-container li:hover a {
+    color: white;
+}
+/* Making the Contact button different */
+.navbar-container li:nth-child(4) {
+    background: white;
+    font-family: 'Fraunces', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in;
+}
+.navbar-container li:nth-child(4) a {
+    color: black;
+    font-size: 13px;
+}
+
+.navbar-container li:nth-child(4):hover {
+    background-color: #6FCFFF;
+}
+.navbar-container li:nth-child(4):hover a {
+    color: white;
+}
+
+/* ################################## Text Area from Header */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+
+    font-size: 23px;
+    font-weight: 900;
+    color: white;
+    font-family: 'Fraunces', sans-serif;
+    letter-spacing: 1rem;
+}
+.text-container img {
+    margin-top: 60px;
+
+    animation: animation1 3s linear infinite;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translateY(0px);
+    }
+    10% {
+        transform: translateY(5px);
+    }
+    20% {
+        transform: translateY(10px);
+    }
+    30% {
+        transform: translateY(15px);
+    }
+    40% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+    60% {
+        transform: translateY(20px);
+    }
+    70% {
+        transform: translateY(15px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    90% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* ############################################### Main area, the zone with boxes with photos and text */
+#main {
+    position: relative;
+    top: 368.5px;
+    left: 0%;
+
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 160px 110px;
+    padding-left: 155px;
+}
+.text:nth-child(5),
+.text:nth-child(6) {
+    text-align: center;
+    justify-content: flex-end;
+    padding: 100px 150px;
+}
+
+.title {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+    margin-bottom: 15px;
+}
+
+.learn-more-btn {
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+    font-family: 'Fraunces', sans-serif;
+    text-transform: uppercase;
+
+    width: 130px;
+    transition: all 0.2s ease;
+
+    border-bottom: rgba(250, 212, 0, 0.3) 10px solid;
+    border-bottom-style: inset;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.learn-more-btn:hover {
+border-bottom-color: hsl(51, 100%, 49%);
+}
+
+.red-btn {
+    transition: all 0.2s ease;
+    border-bottom-color: rgba(254, 120, 103, 0.3);
+}
+.red-btn:hover {
+    border-bottom-color: hsl(7, 99%, 70%);
+}
+
+.paragraph {
+    color: hsl(232, 10%, 55%);
+    line-height: 1.8;
+    letter-spacing: normal;
+    font-size: 18px;
+    margin: 10px 23px;
+}
+
+.graphic {
+    color: hsl(167, 40%, 24%);
+}
+.graphic-text {
+    color: hsl(167, 40%, 24%);
+}
+
+.photography {
+    color: hsl(198, 62%, 26%);
+}
+.photography-text {
+    color: hsl(212, 27%, 19%);
+}
+
+.img {
+    height: 62vh;
+    max-width: 50vw;
+    min-width: 759.6px;
+    min-height: 648px;
+}
+
+.box-2 {
+    background: url('/images/desktop/image-transform.jpg') no-repeat center/cover;
+}
+.box-3 {
+    background: url('/images/desktop/image-stand-out.jpg') no-repeat center/cover;
+}
+.box-5 {
+    background: url('/images/desktop/image-graphic-design.jpg') no-repeat center/cover;
+}
+.box-6 {
+    background: url('/images/desktop/image-photography.jpg') no-repeat center/cover;
+}
+
+/* ############################################### Testimonials */
+#testimonials {
+    position: relative;
+    top: 368px;
+    left: 0%;
+    
+    width: 100vw;
+    height: 840px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-testimonial-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-box-style {
+    text-align: center;
+    width: 370px;
+    margin: 0 30px;
+}
+.testimonial-box-style:nth-child(2) {
+    width: 400px;
+}
+
+.testimonial-tile {
+    font-size: 25px;
+    letter-spacing: 1.5px!important;
+    margin-bottom: 80px;
+}
+
+.testimonial-img {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    margin-bottom: 60px;
+}
+
+.testimonial-paragraph {
+    margin-bottom: 70px;
+    color: #5a636c;;
+    line-height: 1.9;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.name {
+    font-family: 'Fraunces', sans-serif;
+    color: #23303e;
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.role {
+    color: #5a636c;;
+}
+
+/* ############################################### Testimonials */
+#img-gallery {
+    position: relative;
+    top: 368px;
+    left: 0%;
+    margin: 0%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-box {
+    height: 440px;
+}
+
+.gallery-box-1 {
+    background: url("/images/desktop/image-gallery-milkbottles.jpg") no-repeat center center/cover;
+}
+.gallery-box-2 {
+    background: url("/images/desktop/image-gallery-orange.jpg") no-repeat center center/cover;
+}
+.gallery-box-3 {
+    background: url("/images/desktop/image-gallery-cone.jpg") no-repeat center center/cover;
+}
+.gallery-box-4 {
+    background: url("/images/desktop/image-gallery-sugarcubes.jpg") no-repeat center center/cover;
+}
+
+/* ############################################### Footer */
+#footer {
+    position: relative;
+    top: 368px;
+    left: 0%;
+
+    height: 353px;
+    background: #90D4C5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer img {
+    margin: 20px 0;
+}
+
+#footer ul {
+    display: flex;
+}
+
+#footer ul li {
+    margin: 30px 20px;
+}
+
+#footer ul li a {
+    font-size: 18px;
+    color:rgb(45, 116, 100);
+}

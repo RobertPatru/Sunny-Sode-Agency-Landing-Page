@@ -1,0 +1,15 @@
+#main {
+    top: 368px;
+}
+
+.text:nth-child(5) {
+    padding: 100px 200px;
+}
+
+.text:nth-child(6) {
+    padding: 100px 250px;
+}
+
+.gallery-box {
+    height: 475px;
+}
